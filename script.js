@@ -1,10 +1,11 @@
-<script>
-  const header = document.querySelector('h1');
-  header.addEventListener('click', function() {
-    header.textContent = 'Cliquez de nouveau pour revenir à l\'en-tête original'
-  });
+const btnToggle = document.getElementById('btn-toggle');
+const body = document.body;
 
-  header.addEventListener('dblclick', function() {
-    header.textContent = 'Bienvenue dans le cours sur GitHub'
-  });
-</script>
+btnToggle.addEventListener('click', function() {
+  body.classList.toggle('dark-mode');
+  if (body.classList.contains('dark-mode')) {
+    btnToggle.textContent = 'Désactiver le mode sombre';
+  } else {
+    btnToggle.textContent = 'Activer le mode sombre';
+  }
+});
