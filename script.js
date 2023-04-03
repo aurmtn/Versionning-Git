@@ -9,3 +9,10 @@ btnToggle.addEventListener('click', function() {
     btnToggle.textContent = 'Activer le mode sombre';
   }
 });
+
+const btnLink = document.getElementById('btn-link');
+
+btnLink.addEventListener('click', () => {
+  alert('Vous allez être redirigé vers le lien !');
+  window.location.href = 'https://www.example.com';
+});
