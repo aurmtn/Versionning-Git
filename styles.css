@@ -11,6 +11,20 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 }
 
+button {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+button:hover {
+    background-color: #1f2c7f;
+}
+
 .container {
 	margin-top: 50px;
 }
