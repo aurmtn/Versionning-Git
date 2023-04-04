@@ -32,3 +32,5 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset(); // réinitialise le formulaire
   }
 });
+
+
