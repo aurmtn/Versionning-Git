@@ -1,58 +1,76 @@
+/* Réinitialisation de la mise en page de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mise en page globale */
 body {
-	background-color: #f2f2f2;
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
 }
 
+/* Styles de titre */
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
+/* Styles de bouton */
 button {
-    background-color: #3f51b5;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color .3s ease;
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #1f2c7f;
+  background-color: #1f2c7f;
 }
 
+/* Styles de conteneur */
 .container {
-	margin-top: 50px;
+  margin-top: 50px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* Styles de barre de navigation */
 .navbar {
-	background-color: #333;
+  background-color: #333;
+  color: #fff;
 }
 
 .navbar-brand {
-	font-size: 28px;
+  font-size: 28px;
+  padding: 20px;
 }
 
 .navbar-nav li a {
-	font-size: 18px;
-	padding: 10px 20px;
-	color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar-nav li a:hover {
-	background-color: #555;
+  background-color: #555;
 }
 
 @media (max-width: 767px) {
-	.navbar-brand {
-		font-size: 24px;
-	}
-	.navbar-nav li a {
-		font-size: 16px;
-		padding: 5px 10px;
-	}
+  /* Styles pour les petits écrans */
+  .navbar-brand {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .navbar-nav li a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
 }
