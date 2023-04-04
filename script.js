@@ -13,6 +13,6 @@ btnToggle.addEventListener('click', function() {
 const btnLink = document.getElementById('btn-link');
 
 btnLink.addEventListener('click', () => {
-  alert('Vous allez être redirigé vers le lien !');
-  window.location.href = 'https://www.example.com';
+  alert('Vous allez être redirigé vers le lien du repo !');
+  window.location.href = 'https://github.com/aurmtn/Versionning-Git';
 });
